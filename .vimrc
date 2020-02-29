@@ -1,6 +1,5 @@
 let mapleader=","
 
-
 " COMPATIBILITY
 " Set 'nocompatible' to avoid unexpected things that your distro might have
 set nocompatible
@@ -49,20 +48,10 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" SYNTASTIC
-" Syntastic is a syntax checking plugin for Vim that runs files through
-" external syntax checkers and displays any resulting errors to the user.
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" COLOR SCHEME
+" EDITOR APPEARENCE
 colorscheme molokai
-
-" FONT
+set number
 set guifont=Monaco\ for\ Powerline:h12
-
-" ENCODING
 set encoding=utf-8
 
 " COMMAND LINE
@@ -80,8 +69,6 @@ set autoread
 let g:ctrlp_map= '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" Syntastic
-nnoremap <leader>st :SyntasticToggleMode<cr>
 
 " NERDTree
 nnoremap <leader>ft :NERDTreeToggle<cr>
