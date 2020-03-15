@@ -15,7 +15,8 @@ endif
 
 
 call plug#begin('~/.vim/bundle')
-
+  
+  Plug 'altercation/vim-colors-solarized'
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   Plug 'tomasr/molokai'
   Plug 'editorconfig/editorconfig-vim'
@@ -40,8 +41,8 @@ set smartcase
 set smartindent
 set expandtab
 
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 
 " BACKUP
 set nobackup
@@ -49,9 +50,10 @@ set nowritebackup
 set noswapfile
 
 " EDITOR APPEARENCE
-colorscheme molokai
+set background=dark
+colorscheme solarized
 set number
-set guifont=Monaco\ for\ Powerline:h12
+set guifont=Droid\ Sans\ Mono\ 12
 set encoding=utf-8
 
 " COMMAND LINE
@@ -71,7 +73,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 
 " NERDTree
-nnoremap <leader>ft :NERDTreeToggle<cr>
+nnoremap <C-n> :NERDTreeToggle<cr>
 
 set updatetime=300
 
